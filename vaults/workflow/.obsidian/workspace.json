@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vim/Registers.md",
+                "file": "dsa/newFile.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vim/Registers.md",
+                "file": "dsa/newFile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vim/Registers.md",
+                "file": "dsa/newFile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vim/Registers.md"
+                "file": "dsa/newFile.md"
               }
             }
           }
@@ -148,10 +148,12 @@
   },
   "active": "43266437b5d9e629",
   "lastOpenFiles": [
+    "Untitled.md",
+    "dsa/newFile.md",
+    "vim/Registers.md",
     "icons/bash.svg",
     "icons/bash.png",
     "icons/wsl.svg",
-    "vim/Registers.md",
     "icons/mongodb.svg",
     "icons/windows.svg",
     "icons/vscode.svg",
@@ -159,7 +161,6 @@
     "icons/vim.svg",
     "icons/react.svg",
     "icons/node.svg",
-    "icons/linux.svg",
     "icons",
     "New folder",
     "Pasted image 20230610133735.png.md",
@@ -167,7 +168,6 @@
     "attachments",
     "attachments",
     "vim/hiddenfile.md",
-    "Untitled.md",
     "Untitled 1.md",
     "vim/attachments",
     "Pasted image 20230610131818.png.md",
