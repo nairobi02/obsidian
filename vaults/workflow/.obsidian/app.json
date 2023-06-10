@@ -2,5 +2,6 @@
   "vimMode": true,
   "attachmentFolderPath": "./attachments",
   "userIgnoreFilters": null,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "newFileLocation": "current"
 }
