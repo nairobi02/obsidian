@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vim/Registers.md",
+                "file": "dev/react/useReducer.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vim/Registers.md",
+                "file": "dev/react/useReducer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vim/Registers.md",
+                "file": "dev/react/useReducer.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vim/Registers.md"
+                "file": "dev/react/useReducer.md"
               }
             }
           }
@@ -146,12 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "43266437b5d9e629",
+  "active": "1392f531227d463c",
   "lastOpenFiles": [
     "vim/Registers.md",
-    "vim/Untitled 2.md",
+    "dev/react/useReducer.md",
+    "dev/Untitled.md",
+    "dev/react",
+    "Untitled",
     "vim/Untitled.md",
-    "vim/Untitled 1.md",
+    "vim/d.md",
+    "vim/Untitled 2.md",
     "dsa/newFile.md",
     "dsa/asdfadf.md",
     "icons/bash.svg",
@@ -175,8 +179,6 @@
     "vim/attachments",
     "Pasted image 20230610131818.png.md",
     "zmisc",
-    "dsa",
-    "dev",
-    "vim"
+    "dsa"
   ]
 }
