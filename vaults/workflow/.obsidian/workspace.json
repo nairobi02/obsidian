@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dev/react/useReducer.md",
+                "file": "vim/Registers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e9d716e940753dad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "vim/Markers.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev/react/useReducer.md",
+                "file": "vim/Markers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev/react/useReducer.md",
+                "file": "vim/Markers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dev/react/useReducer.md"
+                "file": "vim/Markers.md"
               }
             }
           }
@@ -146,14 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1392f531227d463c",
+  "active": "e9d716e940753dad",
   "lastOpenFiles": [
     "vim/Registers.md",
+    "vim/Markers.md",
     "dev/react/useReducer.md",
     "dev/Untitled.md",
     "dev/react",
     "Untitled",
-    "vim/Untitled.md",
     "vim/d.md",
     "vim/Untitled 2.md",
     "dsa/newFile.md",
