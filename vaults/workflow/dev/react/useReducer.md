@@ -1,5 +1,5 @@
 
-# [useReducer – React](https://react.dev/reference/react/useReducer)
+# ![[react.png]] [useReducer – React](https://react.dev/reference/react/useReducer)
 
 ```js
 import { useReducer } from "react";

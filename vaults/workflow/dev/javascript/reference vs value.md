@@ -1,4 +1,4 @@
-# Call by reference v value
+# ![[js.png]] Call by reference v value
 
 
 An example of it explained for react's useEffect dependency list, 

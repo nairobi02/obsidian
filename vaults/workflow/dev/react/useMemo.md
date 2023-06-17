@@ -1,4 +1,4 @@
-# useMemo
+# ![[react.png]] useMemo
 
 `useMemo` is a React Hook that lets you cache the result of a calculation between re-renders.
 
@@ -45,9 +45,9 @@ export default function App() {
 
 ### How does it work?
 
-- The `useMemo` hook takes two arguments: a function representing the calculation to be memoized and an array of dependencies.
+- The `useMemo` hook takes two arguments: a function representing the calculation to be cached and an array of dependencies.
 - The function is executed initially and whenever the dependencies in the array change.
-- If the dependencies haven't changed, `useMemo` returns the previously memoized value, avoiding recalculation and improving performance.
+- If the dependencies haven't changed, `useMemo` returns the previously cached value, avoiding recalculation and improving performance.
 - In this case, the `useMemo` hook ensures that `funcDouble(number)` is recalculated only when the `number` state changes.
 
 ### Caveats and considerations:
@@ -109,7 +109,16 @@ export default function App() {
 
 ```
 
-so here, if i press the button, then dark state changes, and because of that the component is re-rendered. but `const doubleNumber` 's value does not change, ie it uses its memoized value, because only dark state changed ( not a dependency for doubleNumber useMemo). and so the entire code  inside the memo ie, execution of funcDouble does not take place hence reducing time taken. 
+so here, if i press the button, then dark state changes, and because of that the component is re-rendered. but `const doubleNumber` 's value does not change, ie it uses its cached value, because only dark state changed ( not a dependency for doubleNumber useMemo). and so the entire code  inside the memo ie, execution of funcDouble does not take place hence reducing time taken. 
 but since dark changed, and dark is a dependency of theme useMemo, the theme variable is re assigned (even though here it's value is same)
 
-The major thing here is, when I press button to change the theme, because the number does not change, the memoized value doubleNumber is used, hence skipping the execution of funcDouble.
+The major thing here is, when I press button to change the theme, because the number does not change, the cached value doubleNumber is used, hence skipping the execution of funcDouble.
+
+
+#### Summary
+
+The `useMemo` hook in React serves two main purposes. Firstly, it is useful for optimizing the performance of slow functions. By wrapping a slow function with `useMemo`, it ensures that the function is not recomputed on every component render. Instead, it only recalculates when the actual value is needed and the inputs to the function have changed.
+
+The second use case for `useMemo` is to maintain referential equality of objects or arrays. When you want to ensure that the reference of an object or array remains the same unless its internal contents have changed, you can use `useMemo`. This prevents unnecessary updates and allows you to update the reference only when the object's contents have actually changed.
+
+By using `useMemo`, you can optimize the performance of your React components by avoiding unnecessary computations and updates. If you want to dive deeper into React, consider checking out the comprehensive React course linked in the description for a thorough understanding of React concepts.

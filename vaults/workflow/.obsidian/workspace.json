@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "13a424bbd66f8bf9",
+        "id": "362b418b7d51a23e",
         "type": "tabs",
         "children": [
           {
-            "id": "1392f531227d463c",
+            "id": "ace4d054b5b90fc2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vim/Registers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9d716e940753dad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dev/react/useMemo.md",
+                "file": "vim/Markers.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#An",
+                "query": "useContext",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev/react/useMemo.md",
+                "file": "vim/Markers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev/react/useMemo.md",
+                "file": "vim/Markers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dev/react/useMemo.md"
+                "file": "vim/Markers.md"
               }
             }
           }
@@ -159,16 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e9d716e940753dad",
+  "active": "ace4d054b5b90fc2",
   "lastOpenFiles": [
-    "dev/react/useReducer.md",
-    "dev/javascript/reference vs value.md",
-    "dev/react/useMemo.md",
-    "dev/react/Untitled.md",
-    "dev/javascript",
-    "vim/Markers.md",
-    "vim/Untitled.md",
     "vim/Registers.md",
+    "vim/Markers.md",
+    "dev/javascript/reference vs value.md",
+    "dev/react/Snippets/useContext_Snippet.md",
+    "dev/react/useCallback.md",
+    "dev/react/useMemo.md",
+    "dev/react/useReducer.md",
+    "dev/react/Snippets",
+    "dev/javascript",
+    "vim/Untitled.md",
     "dev/Untitled.md",
     "dev/react",
     "Untitled",
@@ -195,7 +184,6 @@
     "vim/hiddenfile.md",
     "Untitled 1.md",
     "vim/attachments",
-    "Pasted image 20230610131818.png.md",
-    "zmisc"
+    "Pasted image 20230610131818.png.md"
   ]
 }

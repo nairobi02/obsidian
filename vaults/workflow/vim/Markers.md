@@ -1,5 +1,4 @@
-# Markers
-
+# ![[vim.png]] Markers
 
 A **mark** allows you to record your current position so you can return to it later. There is no visible indication of where marks are set.
 
