@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vim/Markers.md",
+                "file": "dev/react/useMemo.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#An",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vim/Markers.md",
+                "file": "dev/react/useMemo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vim/Markers.md",
+                "file": "dev/react/useMemo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vim/Markers.md"
+                "file": "dev/react/useMemo.md"
               }
             }
           }
@@ -161,9 +161,14 @@
   },
   "active": "e9d716e940753dad",
   "lastOpenFiles": [
-    "vim/Registers.md",
-    "vim/Markers.md",
     "dev/react/useReducer.md",
+    "dev/javascript/reference vs value.md",
+    "dev/react/useMemo.md",
+    "dev/react/Untitled.md",
+    "dev/javascript",
+    "vim/Markers.md",
+    "vim/Untitled.md",
+    "vim/Registers.md",
     "dev/Untitled.md",
     "dev/react",
     "Untitled",
@@ -191,7 +196,6 @@
     "Untitled 1.md",
     "vim/attachments",
     "Pasted image 20230610131818.png.md",
-    "zmisc",
-    "dsa"
+    "zmisc"
   ]
 }
