@@ -135,3 +135,55 @@ const Counter = () => {
 - If the new value you provide is identical to the current `state`, as determined by an [`Object.is`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is) comparison, React will **skip re-rendering the component and its children.** This is an optimization. React may still need to call your component before ignoring the result, but it shouldn’t affect your code.
     
 - React [batches state updates.](https://react.dev/learn/queueing-a-series-of-state-updates) It updates the screen **after all the event handlers have run** and have called their `set` functions. This prevents multiple re-renders during a single event. In the rare case that you need to force React to update the screen earlier, for example to access the DOM, you can use [`flushSync`.](https://react.dev/reference/react-dom/flushSync)
+
+
+### with debouncing 
+
+```js
+import { useEffect, useReducer } from "react";
+import "./index.css";
+
+const emailReducer = (state, action) => {
+  if (action.type === "USER_INPUT") {
+    return { ...state ,value: action.val };
+  }
+  if (action.type === "USER_INPUT_VALIDITY") {
+    return { ...state, isValid: state.value.includes("@") };
+  }
+  return { value: "", isValid: false };
+};
+
+export default function App() {
+  const [emailState, dispathEmail] = useReducer(emailReducer, {
+    value: "",
+    isValid: false
+  });
+  useEffect(() => {
+    const identifier = setTimeout(() => {
+      dispathEmail({ type: "USER_INPUT_VALIDITY" });
+    }, 500);
+    return () => {
+      clearTimeout(identifier);
+    };
+  }, [emailState.value]);
+
+  const handleChange = (val) => {
+    dispathEmail({ type: "USER_INPUT", val: val });
+  };
+
+  return (
+    <div className="App">
+      <input
+        className={"input " + (emailState.isValid ? " green" : " red")}
+        type="text"
+        value={emailState.value}
+        onChange={(e) => handleChange(e.target.value)}
+      />
+      {emailState.value}
+      {" " + emailState.isValid}
+    </div>
+  );
+}
+```
+
+
