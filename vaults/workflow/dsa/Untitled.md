@@ -1,1 +1,0 @@
-15 years of experience
