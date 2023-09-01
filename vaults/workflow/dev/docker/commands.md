@@ -75,3 +75,81 @@ The `docker exec` command is used to execute a command inside a running Docker c
 docker exec -it my-web-container bash
 ```
 
+### Docker logs
+
+```sh
+docker logs my-web-container
+```
+
+- Purpose: View the logs of a running or stopped container named `my-web-container`.
+- Use Case: Troubleshoot container issues and view application logs.
+
+### Docker run
+ ```sh
+docker run -v $(pwd):/app -v /app/node_modules -p 3000:3000 -d --name my-web-container my-web-container-image
+ ```
+- Purpose: Run a Docker container named `my-web-container` from the `my-web-container-image` image.
+- Use Case: Start a container, map ports, mount local code, and create an anonymous volume for node_modules.
+
+ ```sh
+docker run -v $(pwd):/app:ro -v /app/node_modules -p 3000:3000 -d --name my-web-container my-web-container-image
+```
+- Purpose: Run a Docker container with read-only mount for local code.
+- Use Case: Start a container with read-only access to the local codebase and a node_modules volume.
+
+ ```sh
+docker run -v $(pwd):/app:ro -v /app/node_modules --env-file ./.env -p 3000:4000 -d --name my-web-container my-web-container-image
+ ```
+- Purpose: Run a Docker container with environment variables and port mapping.
+- Use Case: Start a container with environment variables loaded from an .env file and port mapping.
+
+### Docker volume ```
+```sh
+docker volume ls
+```
+
+- Purpose: List all Docker volumes on the host.
+- Use Case: Check available volumes on the host system.
+
+ ```sh
+docker rm my-web-container -fv
+```
+- Purpose: Remove a Docker container named `my-web-container` forcefully.
+- Use Case: Delete a container, including its associated volumes.
+
+```sh
+docker volume prune
+```
+- Purpose: Remove all unused Docker volumes.
+- Use Case: Clean up unused volumes to free up disk space.
+
+### Docker Compose Commands:
+```sh
+docker-compose up -d
+```
+- Purpose: Start Docker Compose services in detached mode.
+- Use Case: Start services defined in a `docker-compose.yml` file in the background.
+
+```sh
+docker-compose down -v
+```
+- Purpose: Stop and remove Docker Compose services and associated volumes.
+- Use Case: Gracefully stop services and remove volumes defined in a `docker-compose.yml` file.
+
+```sh
+docker-compose up -d --build
+```
+- Purpose: Start Docker Compose services in detached mode, rebuilding images if necessary.
+- Use Case: Rebuild and restart services with updated configurations.
+
+```sh
+docker-compose -f ./docker-compose.yml -f ./docker-compose.dev.yml up -d --build
+```
+- Purpose: Start Docker Compose services from multiple YAML files, in detached mode, rebuilding images if necessary.
+- Use Case: Start services defined in multiple `docker-compose` files, e.g., for different environments.
+
+```sh
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
+```
+- Purpose: Stop and remove Docker Compose services and associated volumes defined in multiple YAML files.
+- Use Case: Gracefully stop services and remove volumes for different environments.

@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "7fedece74a7e6f7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "dev/react/Snippets/react-query_Snippet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "3ac76867b1e2fa2d",
             "type": "leaf",
             "state": {
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev/docker/commands.md",
+                "file": "dev/react/useMemo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev/docker/commands.md",
+                "file": "dev/react/useMemo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dev/docker/commands.md"
+                "file": "dev/react/useMemo.md"
               }
             }
           }
@@ -171,16 +158,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3ac76867b1e2fa2d",
+  "active": "ace4d054b5b90fc2",
   "lastOpenFiles": [
+    "dev/react/Snippets/react-query_Snippet.md",
+    "dev/docker/commands.md",
+    "dev/docker/docker-compose.md",
     "dev/javascript/reference vs value.md",
     "dev/CSS/Snippets/Soft colors.md",
     "dev/CSS/Untitled.md",
-    "dev/docker/commands.md",
     "vim/Registers.md",
     "dev/docker",
     "dev/react/Snippets/useContext_Snippet.md",
-    "dev/react/Snippets/react-query_Snippet.md",
     "dev/react/useReducer.md",
     "dev/react/useCallback.md",
     "dev/react/useMemo.md",
