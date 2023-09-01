@@ -4,25 +4,33 @@
 
 `src/Context/counter-context`
 ```js
-import AppContent from "./AppContent";
-import { useContext } from "react";
-import { CounterContextProvider } from "./Context/counter-context";
+import React, { useState, useCallback } from "react";
 
-export default function App() {
+const CounterContext = React.createContext({
+  data: 0,
+  handleClick: () => {}
+});
+
+const CounterContextProvider = (props) => {
+  const [data, setData] = useState(0);
+  const handleClick = useCallback(() => {
+    console.log("--------------");
+    setData((prev) => ++prev);
+  }, []);
   return (
-    <CounterContextProvider>
-      <AppContent />
-    </CounterContextProvider>
+    <CounterContext.Provider value={{ data, handleClick }}>
+      {props.children}
+    </CounterContext.Provider>
   );
-}
-
+};
+export { CounterContext, CounterContextProvider };
 ```
 
 `src/App.js`
 ```js
 import AppContent from "./AppContent";
-import { useContext } from "react";
 import { CounterContextProvider } from "./Context/counter-context";
+import "./styles.css";
 
 export default function App() {
   return (
@@ -47,6 +55,21 @@ export default function AppContent() {
       {data}
       <Child1 />
       <Child2 />
+    </div>
+  );
+}
+```
+
+src/Child1.js
+```js
+import { CounterContext } from "./Context/counter-context";
+import { useContext } from "react";
+export default function Child1() {
+  const { data, handleClick } = useContext(CounterContext);
+  console.log("child1 re-rendered");
+  return (
+    <div>
+      <button onClick={() => handleClick()}>{data} Child1</button>
     </div>
   );
 }

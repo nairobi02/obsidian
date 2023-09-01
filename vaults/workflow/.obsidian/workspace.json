@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dev/react/Snippets/react-query.md",
+                "file": "dev/react/Snippets/react-query_Snippet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3ac76867b1e2fa2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "dev/docker/commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "useContext",
+                "query": "last yanked",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev/react/Snippets/react-query.md",
+                "file": "dev/docker/commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev/react/Snippets/react-query.md",
+                "file": "dev/docker/commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dev/react/Snippets/react-query.md"
+                "file": "dev/docker/commands.md"
               }
             }
           }
@@ -159,24 +171,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7fedece74a7e6f7e",
+  "active": "3ac76867b1e2fa2d",
   "lastOpenFiles": [
-    "dsa/Untitled.md",
-    "dev/react/Snippets/react-query.md",
-    "icons/react.png",
-    "dev/react/useMemo.md",
     "dev/javascript/reference vs value.md",
-    "vim/Markers.md",
+    "dev/CSS/Snippets/Soft colors.md",
+    "dev/CSS/Untitled.md",
+    "dev/docker/commands.md",
     "vim/Registers.md",
+    "dev/docker",
     "dev/react/Snippets/useContext_Snippet.md",
-    "dev/react/useCallback.md",
+    "dev/react/Snippets/react-query_Snippet.md",
     "dev/react/useReducer.md",
+    "dev/react/useCallback.md",
+    "dev/react/useMemo.md",
+    "dev/CSS/Snippets",
+    "dev/CSS",
+    "dsa/Untitled.md",
+    "icons/react.png",
+    "vim/Markers.md",
     "dev/react/Snippets",
     "dev/javascript",
     "vim/Untitled.md",
     "dev/Untitled.md",
     "dev/react",
-    "Untitled",
     "vim/d.md",
     "vim/Untitled 2.md",
     "dsa/newFile.md",
@@ -195,10 +212,8 @@
     "Pasted image 20230610133735.png.md",
     "attachments",
     "attachments",
-    "attachments",
     "vim/hiddenfile.md",
     "Untitled 1.md",
-    "vim/attachments",
     "Pasted image 20230610131818.png.md"
   ]
 }

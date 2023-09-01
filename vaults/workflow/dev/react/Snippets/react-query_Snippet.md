@@ -5,7 +5,7 @@
 npm i @tanstack/react-query
 ```
 
-
+[codesandbox]([react-query - CodeSandbox](https://codesandbox.io/s/react-query-633r96))
 root component
 ```jsx
 const queryClient= new QueryClient()
