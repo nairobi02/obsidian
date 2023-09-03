@@ -153,3 +153,29 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
 ```
 - Purpose: Stop and remove Docker Compose services and associated volumes defined in multiple YAML files.
 - Use Case: Gracefully stop services and remove volumes for different environments.
+
+
+### Print environment variables
+
+```sh
+docker exec -it blogpost-blog-server-1 bash
+bash$ printenv
+```
+
+```sh
+HOSTNAME=2e9d0f1b979d
+YARN_VERSION=1.22.19
+PWD=/app
+MONGO_INITDB_ROOT_PASSWORD=example
+NODE_ENV=development
+MONGO_INITDB_ROOT_USERNAME=root
+HOME=/root
+TERM=xterm
+SHLVL=1
+MONGODB_PORT=27017
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+NODE_VERSION=20.5.1
+_=/usr/bin/printenv
+```
+
+

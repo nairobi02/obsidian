@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "dev/docker/docker-compose.md",
+                "file": "dev/docker/commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "last yanked",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "dev/docker/docker-compose.md",
+                "file": "dev/docker/commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "dev/docker/docker-compose.md",
+                "file": "dev/docker/commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "dev/docker/docker-compose.md"
+                "file": "dev/docker/commands.md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "3ac76867b1e2fa2d",
   "lastOpenFiles": [
+    "dev/docker/docker-compose.md",
     "dev/docker/commands.md",
     "dev/react/useMemo.md",
     "dev/react/Snippets/react-query_Snippet.md",
-    "dev/docker/docker-compose.md",
     "dev/javascript/reference vs value.md",
     "dev/CSS/Snippets/Soft colors.md",
     "dev/CSS/Untitled.md",

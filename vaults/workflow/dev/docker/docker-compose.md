@@ -1,3 +1,5 @@
+# Docker-compose commands
+
 ```yml
 version: "3"
 services:
@@ -117,12 +119,44 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --no-deps
 These commands are essential for managing Docker containers, networks, and multi-container applications efficiently. Docker Compose, in particular, simplifies the deployment of complex applications by defining their structure in a single configuration file.
 
 
+### Scaling the application
 
+```shell
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build --scale blog-server=2
+```
 
+```shell
+# Docker Compose Command Notes
 
+The following Docker Compose command is used to start a multi-container application with specific configuration files and scaling for a development environment.
 
+# Command:
 
+```shell
+docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build --scale blog-server=2
+```
 
+#### Explanation:
 
+- `docker-compose`: This command is used to manage multi-container Docker applications defined in a Compose file.
 
+- `-f docker-compose.yml -f docker-compose.dev.yml`: Specifies the Compose files to use for configuring the services. In this case, it combines configurations from both `docker-compose.yml` and `docker-compose.dev.yml`.
+
+- `up`: Starts the services defined in the Compose file.
+
+- `-d`: Runs the services in detached mode, which means they will run in the background, and the terminal remains available for other commands.
+
+- `--build`: Forces a rebuild of the service images before starting containers. This is useful when you want to ensure that your images are up-to-date with the latest code changes.
+
+- `--scale blog-server=2`: Specifies that the `blog-server` service should be scaled to have two instances running. This is commonly used for load balancing or testing.
+
+#### Use Cases:
+
+- This command is typically used during development when you want to run multiple instances of a service for testing or debugging purposes.
+
+- It's useful for simulating a load-balanced environment where multiple instances of a service handle incoming requests.
+
+- The `--build` flag ensures that any code changes in your services are reflected in the containers.
+
+- Be aware that running multiple instances of a service may require adjustments in your application code to handle load balancing or distributed configurations effectively.
 
